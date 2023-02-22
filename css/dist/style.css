@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 1170px;
+  max-width: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  padding: 13px 27px;
+  border: 2px solid white;
+  border-radius: 40px;
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  width: fit-content;
+  text-align: center;
+}
+
+.top-line {
+  width: 100vw;
+  background-color: #EFEFEF;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+.top-line .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 447px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0;
+}
+.top-line .menu .item {
+  display: inline-block;
+  width: fit-content;
+  color: #333333;
+}
+
+.second-line {
+  margin-top: 20px;
+}
+.second-line .second-line--first-line {
+  border-bottom: 1px solid #EFEFEF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.second-line .second-line--first-line .second-line--first-line--content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.second-line .second-line--first-line .second-line--first-line--content .second-line--first-line--content--logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.second-line .second-line--first-line .second-line--first-line--content .second-line--first-line--content--logo h1 {
+  color: #66C05D;
+  font-size: 36px;
+  line-height: 42px;
+}
+.second-line .second-line--first-line .second-line--first-line--content .second-line--first-line--content--phone {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.second-line .second-line--first-line .second-line--first-line--content .second-line--first-line--content--phone p {
+  font-size: 16px;
+  line-height: 19px;
+}
+.second-line .second-line--first-line .second-line--first-line--content .second-line--first-line--content--phone .button {
+  border-color: #66C05D;
+  color: black;
+}
+.second-line .second-line--second-line {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.second-line .second-line--second-line .second-line--second-line--main-menu {
+  margin: 0 auto;
+  max-width: 675px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.hero {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1170px;
+  height: 604px;
+  background-image: url(../../src/img/hero-background.png);
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+}
+.hero .hero--text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: white;
+}
+.hero .hero--text .button {
+  width: 170px;
+}
+.hero .hero--text p {
+  display: block;
+  width: 308px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.hero .hero--text h2 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.special-offers {
+  width: 100vw;
+  background-color: #EFEFEF;
+  padding-top: 60px;
+}
+.special-offers .special-offers--content {
+  padding-top: 20px;
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  background-image: url(../../src/img/car.svg);
+  background-position: top 5px right 100px;
+  background-repeat: no-repeat;
+}
+.special-offers .special-offers--content h3 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 38px;
+}
+.special-offers .special-offers--content .special-offers--content--goods {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.special-offers .special-offers--content .special-offers--content--goods .special-offers--content--goods--item {
+  background-color: white;
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px 30px;
+  align-items: center;
+}
+.special-offers .special-offers--content .special-offers--content--goods .special-offers--content--goods--item p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+}
+.special-offers .special-offers--content .special-offers--content--goods .special-offers--content--goods--item strong {
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+.special-offers .special-offers--content .special-offers--content--goods .special-offers--content--goods--item button {
+  padding: 9px 40px;
+  color: white;
+  background-color: #66C05D;
+  border: 0;
+  border-radius: 30px;
+}
+.special-offers .special-offers--content .special-offers--green-blocks {
+  display: flex;
+  gap: 30px;
+}
+.special-offers .special-offers--content .special-offers--green-blocks > div {
+  width: 540px;
+  padding: 35px 40px;
+  color: #EFEFEF;
+  background-color: #66C05D;
+}

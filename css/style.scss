@@ -1,0 +1,237 @@
+$green: #66C05D;
+$grey: #333333;
+$white: #EFEFEF;
+$width: 1110px;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1170px;
+    max-width: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.button {
+    padding: 13px 27px;
+    border: 2px solid white;
+    border-radius: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    width: fit-content;
+    text-align: center;
+}
+
+.top-line {
+    width: 100vw;
+    background-color: $white;
+    padding-top: 16px;
+    padding-bottom: 17px;
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        width: 447px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 0;
+
+        .item {
+            display: inline-block;
+            width: fit-content;
+            color: $grey;
+        }
+    }
+}
+
+.second-line {
+    margin-top: 20px;
+
+    .second-line--first-line {
+        border-bottom: 1px solid $white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .second-line--first-line--content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: $width;
+            margin: 0 auto;
+
+            .second-line--first-line--content--logo {
+
+                display: flex;
+                gap: 20px;
+                align-items: center;
+
+                h1 {
+                    color: $green;
+                    font-size: 36px;
+                    line-height: 42px;
+                }
+            }
+
+            .second-line--first-line--content--phone {
+                display: flex;
+                gap: 40px;
+                align-items: center;
+
+                p {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+                .button {
+                    border-color: $green;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .second-line--second-line {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .second-line--second-line--main-menu {
+            margin: 0 auto;
+            max-width: 675px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            color: black;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+
+.hero {
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 1170px;
+    height: 604px;
+    background-image: url(../../src/img/hero-background.png);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+
+    .hero--text {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        color: white;
+
+        .button {
+            width: 170px;
+        }
+
+        p {
+            display: block;
+            width: 308px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        h2 {
+            font-size: 48px;
+            line-height: 56px;
+        }
+
+    }
+}
+
+.special-offers {
+    width: 100vw;
+    background-color: $white;
+    padding-top: 60px;
+
+    .special-offers--content {
+        padding-top:20px;
+        width: 1170px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        background-image: url(../../src/img/car.svg);
+        background-position: top 5px right 100px;
+        background-repeat: no-repeat;
+
+        h3 {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 38px;
+        }
+
+
+        .special-offers--content--goods {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            margin-bottom: 100px;
+            .special-offers--content--goods--item {
+                background-color: white;
+                width: 255px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 25px 30px;
+                align-items: center;
+
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: $grey;
+                    text-align: center;
+                }
+
+                strong{
+                    font-size: 21px;
+                    line-height: 25px;
+                    text-align: center;
+                    font-weight: 700;
+                }
+
+                button{
+                    padding: 9px 40px;
+                    color: white;
+                    background-color: $green;
+                    border: 0;
+                    border-radius: 30px;
+                }
+            }
+        }
+
+        .special-offers--green-blocks{
+            display: flex;
+            gap: 30px;
+
+            &>div{
+                width: 540px;
+                padding:35px 40px;
+                color:$white;
+                background-color: $green;
+            }
+        }
+    }
+}
