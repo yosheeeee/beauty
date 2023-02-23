@@ -150,7 +150,7 @@ ul {
 }
 .special-offers .special-offers--content {
   padding-top: 20px;
-  width: 1170px;
+  width: 1110px;
   margin: 0 auto;
   background-image: url(../../src/img/car.svg);
   background-position: top 5px right 100px;
@@ -198,6 +198,8 @@ ul {
 .special-offers .special-offers--content .special-offers--green-blocks {
   display: flex;
   gap: 30px;
+  width: 1110px;
+  margin: 0 auto;
 }
 .special-offers .special-offers--content .special-offers--green-blocks > div {
   width: 540px;
@@ -256,7 +258,7 @@ ul {
 
 footer .footer-upline {
   width: 100vw;
-  background-color: #EFEFEF;
+  background-color: white;
   padding: 37px 0px;
 }
 footer .footer-upline .footer-upline--content {
@@ -304,4 +306,22 @@ footer .footer-upline .footer-upline--content .button {
 }
 footer .footer-upline .footer-upline--content .button p {
   width: 117px;
+}
+footer .footer-downline {
+  width: 100vw;
+  background-color: #EFEFEF;
+  padding: 25px 0px;
+}
+footer .footer-downline .footer-downline--content {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  gap: 345px;
+  align-items: center;
+}
+footer .footer-downline .footer-downline--content p {
+  color: #828282;
+  width: fit-content;
+  font-size: 12px;
+  line-height: 14px;
 }
