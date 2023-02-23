@@ -37,7 +37,7 @@ ul {
     width: fit-content;
     text-align: center;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 }
@@ -232,6 +232,7 @@ ul {
             gap: 30px;
             width: $width;
             margin: 0 auto;
+
             &>div {
                 width: 540px;
                 padding: 35px 40px;
@@ -333,50 +334,51 @@ footer {
                 margin-right: 205px;
             }
 
-            .footer-upline--content--adress{
+            .footer-upline--content--adress {
                 width: 230px;
                 font-size: 14px;
                 line-height: 16px;
-                color:black;
+                color: black;
                 margin-right: 104px;
             }
 
-            .footer-upline--content--phone{
+            .footer-upline--content--phone {
                 width: 130px;
                 font-size: 16px;
                 line-height: 19px;
-                margin-right:35px;
+                margin-right: 35px;
             }
 
-            .button{
-                color:black;
-                padding:13px 27px;
+            .button {
+                color: black;
+                padding: 13px 27px;
                 font-size: 14px;
                 line-height: 16px;
-                width:170px;
+                width: 170px;
                 border: 2px solid $green;
 
-                p{
-                    width:117px;
+                p {
+                    width: 117px;
                 }
             }
         }
     }
 
-    .footer-downline{
+    .footer-downline {
         width: 100vw;
         background-color: $white;
-        padding:25px 0px;
-        .footer-downline--content{
-            width:$width;
-            margin:0 auto;
+        padding: 25px 0px;
+
+        .footer-downline--content {
+            width: $width;
+            margin: 0 auto;
             display: flex;
             gap: 345px;
             align-items: center;
 
-            p{
-                color:#828282;
-                width:fit-content;
+            p {
+                color: #828282;
+                width: fit-content;
                 font-size: 12px;
                 line-height: 14px;
             }
