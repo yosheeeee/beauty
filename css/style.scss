@@ -36,6 +36,10 @@ ul {
     color: white;
     width: fit-content;
     text-align: center;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .top-line {
@@ -256,6 +260,14 @@ ul {
                     padding: 9px 25px;
                     width: 225px;
                     border: 0;
+
+                    &::placeholder {
+                        color: #C4C4C4;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
                 }
             }
 
@@ -289,28 +301,62 @@ ul {
     }
 }
 
-footer{
-    .footer-upline{
-        width:100vw;
+footer {
+    .footer-upline {
+        width: 100vw;
         background-color: $white;
         padding: 37px 0px;
-        .footer-upline--content{
+
+        .footer-upline--content {
             width: $width;
-            margin:0 auto;
+            margin: 0 auto;
             display: flex;
+            align-items: center;
             flex-direction: row;
-            .footer-upline--content--links{
+
+            .footer-upline--content--links {
                 display: flex;
                 flex-direction: row;
-                gap:20px;
-                li{
-                    width:45px;
+                gap: 20px;
+
+                li {
+                    width: 45px;
                     height: 45px;
                     border: 2px solid $green;
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                }
+
+                margin-right: 205px;
+            }
+
+            .footer-upline--content--adress{
+                width: 230px;
+                font-size: 14px;
+                line-height: 16px;
+                color:black;
+                margin-right: 104px;
+            }
+
+            .footer-upline--content--phone{
+                width: 130px;
+                font-size: 16px;
+                line-height: 19px;
+                margin-right:35px;
+            }
+
+            .button{
+                color:black;
+                padding:13px 27px;
+                font-size: 14px;
+                line-height: 16px;
+                width:170px;
+                border: 2px solid $green;
+
+                p{
+                    width:117px;
                 }
             }
         }

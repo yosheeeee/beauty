@@ -30,6 +30,9 @@ ul {
   width: fit-content;
   text-align: center;
 }
+.button:hover {
+  cursor: pointer;
+}
 
 .top-line {
   width: 100vw;
@@ -223,6 +226,12 @@ ul {
   width: 225px;
   border: 0;
 }
+.special-offers .special-offers--content .special-offers--green-blocks > div input::placeholder {
+  color: #C4C4C4;
+}
+.special-offers .special-offers--content .special-offers--green-blocks > div input:focus {
+  outline: none;
+}
 .special-offers .special-offers--content .special-offers--green-blocks .special-offers--green-block--first {
   background-image: url("../../src/img/message.svg");
   background-repeat: no-repeat;
@@ -254,12 +263,14 @@ footer .footer-upline .footer-upline--content {
   width: 1110px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   flex-direction: row;
 }
 footer .footer-upline .footer-upline--content .footer-upline--content--links {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  margin-right: 205px;
 }
 footer .footer-upline .footer-upline--content .footer-upline--content--links li {
   width: 45px;
@@ -269,4 +280,28 @@ footer .footer-upline .footer-upline--content .footer-upline--content--links li 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+footer .footer-upline .footer-upline--content .footer-upline--content--adress {
+  width: 230px;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  margin-right: 104px;
+}
+footer .footer-upline .footer-upline--content .footer-upline--content--phone {
+  width: 130px;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 35px;
+}
+footer .footer-upline .footer-upline--content .button {
+  color: black;
+  padding: 13px 27px;
+  font-size: 14px;
+  line-height: 16px;
+  width: 170px;
+  border: 2px solid #66C05D;
+}
+footer .footer-upline .footer-upline--content .button p {
+  width: 117px;
 }
