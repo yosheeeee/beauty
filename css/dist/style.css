@@ -280,7 +280,7 @@ footer .footer-upline .footer-upline--content .footer-upline--content--links li 
   border: 2px solid #66C05D;
   border-radius: 50%;
   display: flex;
-  align-items: center;
+  place-items: center;
   justify-content: center;
 }
 footer .footer-upline .footer-upline--content .footer-upline--content--adress {
